@@ -42,14 +42,14 @@ table {
     border-spacing: 0;
 }
 
-img{ /*這行是為了RWD多加的*/
+img{ //這行是為了RWD多加的
     max-width: 100%;
     height: auto;
 }
 
-/*以上是css reset*/
-/*以下是確保盒模型不會破版*/
-/* 全域 border box */
+//以上是css reset
+//以下是確保盒模型不會破版
+// 全域 border box 
 
 *,*::before,*::after {
     box-sizing: border-box;
