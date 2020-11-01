@@ -1,16 +1,20 @@
 @import 'reset';
 @import 'grid';
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Roboto:wght@500&display=swap');
+body {
+    font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+}
+
 // 頁首
 @import 'header';
 @import 'nav';
 @import 'banner';
 
 // 內容
-@import 'container';//中間區塊設定
+@import 'container'; //中間區塊設定
 
 @import 'section';
-
 
 // 頁尾
 @import 'footer';
@@ -18,7 +22,8 @@
 // 通用
 @import 'spacing';
 @import 'utilities';
+@import 'flex';
 
 * {
-    outline: 1px solid green;
+    // outline: 1px solid green;
 }

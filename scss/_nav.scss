@@ -9,8 +9,8 @@
     padding-left: 88px;
     padding-right: 88px;
     @include pad() {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 39px;
+        padding-right: 39px;
     }
     @include phoneV() {
         flex-direction: column;
