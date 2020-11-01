@@ -1,4 +1,21 @@
 @import 'reset';
 @import 'grid';
+
+// 頁首
 @import 'header';
+
+// 內容
+@import 'container';//中間區塊設定
+@import 'banner';
+@import 'section';
+
+
+// 頁尾
 @import 'footer';
+
+// 通用
+@import 'spacing';
+
+* {
+    outline: 1px solid green;
+}
