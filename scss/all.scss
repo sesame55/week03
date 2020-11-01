@@ -3,10 +3,12 @@
 
 // 頁首
 @import 'header';
+@import 'nav';
+@import 'banner';
 
 // 內容
 @import 'container';//中間區塊設定
-@import 'banner';
+
 @import 'section';
 
 
@@ -15,6 +17,7 @@
 
 // 通用
 @import 'spacing';
+@import 'utilities';
 
 * {
     outline: 1px solid green;

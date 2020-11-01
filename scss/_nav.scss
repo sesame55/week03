@@ -1,0 +1,55 @@
+// nav
+// nav_logo
+// nav_list , list_item
+
+// 最外圍
+.nav {
+    display: flex;
+    // flex-wrap: wrap;
+    padding-left: 88px;
+    padding-right: 88px;
+    @include pad() {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include phoneV() {
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+}
+
+// logo`
+.nav_logo {
+    display: inline-block;
+    @include phoneV() {
+        height: 50px;
+    }
+}
+
+// menu
+.nav_list {
+    display: flex;
+    // flex-wrap: wrap;
+    @include phoneV() {
+        flex-wrap: wrap;
+    }
+    .list_item {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        margin-left: 64px;
+        @include pad() {
+            margin-left: 40px;
+        }
+        @include phoneV() {
+            padding: 8px;
+            margin: 0px;
+            width: 50%;
+            border: 1px solid #ffffff;
+        }
+    }
+}

@@ -1,6 +1,19 @@
 // test
-.header{
-    @include pad(){
-        width: 100%;
+// .header{
+//     @include pad(){
+//         width: 100%;
+//     }
+// }
+
+.header {
+    &_logo {
+        width: 80px;
+        background: url(../img/logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        @include phoneV() {
+            width: 48px;
+        }
     }
 }
