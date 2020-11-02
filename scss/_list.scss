@@ -1,0 +1,126 @@
+// 專業
+.list_style_pro {
+    display: flex;
+    justify-content: space-around;
+    @include pad() {
+        flex-wrap: wrap;
+        padding: 0 11%;
+    }
+    .list_body {
+        width: 208px;
+        @include pad() {
+            margin-bottom: 40px;
+        }
+        @include phoneV() {
+            width: 237px;
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 40px;
+            @include pad() {
+                margin-bottom: 1rem;
+            }
+        }
+        .list_text {
+            h5 {
+                font-size: 24px;
+                line-height: 36px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+// 經典
+.list_style_classic {
+    display: flex;
+    flex-direction: column;
+    .list_body {
+        display: flex;
+        @include phoneV() {
+            display: block;
+        }
+        // 圖片
+        .list_img {
+            width: 635px;
+            height: 320px;
+            text-align: center;
+            @include pad() {
+                width: 390px;
+                height: 168px;
+            }
+            @include phoneV() {
+                width: 100%;
+                height: 134px;
+            }
+        }
+        // 文字內容
+        .list_text {
+            display: flex;
+            align-self: center;
+            margin: 0 30px;
+            vertical-align: center;
+            @include phoneV() {
+                display: none;
+            }
+            .show-lg {
+                display: inline-block;
+                margin-right: 8px;
+                width: 48px;
+                @include pad() {
+                    width: 32px;
+                }
+            }
+            p {
+                display: inline-block;
+                font-size: 48px;
+                line-height: 72px;
+                font-weight: 900;
+                color: #650300;
+                @include pad() {
+                    font-size: 28px;
+                    line-height: 42px;
+                }
+            }
+        }
+        // 包在圖片內
+        .list_text-sm {
+            display: none;
+            @include phoneV() {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                .show-sm {
+                    display: inline-block;
+                    width: 32px;
+                    margin-right: 8px;
+                }
+                p {
+                    color: #ffffff;
+                    font-size: 28px;
+                    line-height: 42px;
+                    font-weight: 900;
+                    font-style: italic;
+                }
+            }
+        }
+        // 相反排列
+        &.list_body-reverse {
+            flex-direction: row-reverse;
+            margin: 32px 0;
+            @include pad() {
+                flex-direction: row;
+                margin: 8px 0;
+            }
+        }
+    }
+}

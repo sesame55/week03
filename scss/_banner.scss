@@ -38,6 +38,20 @@
         padding: 0 15px;
     }
 }
+// 標題
+.banner_title {
+    font-size: 64px;
+    line-height: 96px;
+    font-weight: bold;
+    @include pad() {
+        font-size: 48px;
+        line-height: 72px;
+    }
+    @include phoneV() {
+        font-size: 32px;
+        line-height: 45px;
+    }
+}
 
 // 文字
 .banner_text {
@@ -50,18 +64,5 @@
     @include phoneV() {
         font-size: 16px;
         line-height: 30px;
-    }
-    &-lg {
-        font-size: 64px;
-        line-height: 96px;
-        font-weight: bold;
-        @include pad() {
-            font-size: 48px;
-            line-height: 72px;
-        }
-        @include phoneV() {
-            font-size: 32px;
-            line-height: 45px;
-        }
     }
 }

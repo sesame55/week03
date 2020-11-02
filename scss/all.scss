@@ -13,8 +13,9 @@ body {
 
 // 內容
 @import 'container'; //中間區塊設定
-
 @import 'section';
+@import 'list';
+@import 'bgu'; //背景圖
 
 // 頁尾
 @import 'footer';
@@ -25,5 +26,5 @@ body {
 @import 'flex';
 
 * {
-    // outline: 1px solid green;
+    outline: 1px solid green;
 }
