@@ -444,7 +444,8 @@ body {
   font-size: 48px;
   line-height: 72px;
   font-weight: 900;
-  color: #650300;
+  font-style: italic;
+  color: #aa0601;
 }
 
 @media (max-width: 768px) {
@@ -503,6 +504,76 @@ body {
   }
 }
 
+.list_style_design {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 375px) {
+  .list_style_design {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.list_style_design .list_body {
+  width: 50%;
+  height: 472px;
+}
+
+.list_style_design .list_body:first-child {
+  margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .list_style_design .list_body {
+    height: 280px;
+  }
+}
+
+@media (max-width: 375px) {
+  .list_style_design .list_body {
+    width: 100%;
+  }
+  .list_style_design .list_body:first-child {
+    margin-bottom: 1rem;
+  }
+}
+
+.list_style_design .list_body .list_text {
+  background-color: #ffffff80;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list_style_design .list_body .list_text p {
+  font-size: 72px;
+  line-height: 108px;
+  font-weight: bold;
+  color: #aa0601;
+}
+
+@media (max-width: 768px) {
+  .list_style_design .list_body .list_text p {
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+
 .bg_product_1 {
   background: url(../img/product-1.png);
   background-size: cover;
@@ -519,6 +590,27 @@ body {
 
 .bg_product_3 {
   background: url(../img/product-3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg_design-bg {
+  background: url(../img/bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg_design-1 {
+  background: url(../img/product-8.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg_design-2 {
+  background: url(../img/product-9.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

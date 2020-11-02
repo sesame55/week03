@@ -1,19 +1,39 @@
 // 經典
-.bg_product_1{
+.bg_product_1 {
     background: url(../img/product-1.png);
     background-size: cover;
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
 }
-.bg_product_2{
+.bg_product_2 {
     background: url(../img/product-2.png);
     background-size: cover;
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
 }
-.bg_product_3{
+.bg_product_3 {
     background: url(../img/product-3.png);
     background-size: cover;
-    background-position:center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// 聯名設計
+.bg_design-bg {
+    background: url(../img/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bg_design-1 {
+    background: url(../img/product-8.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bg_design-2 {
+    background: url(../img/product-9.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }

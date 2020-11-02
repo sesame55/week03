@@ -84,7 +84,8 @@
                 font-size: 48px;
                 line-height: 72px;
                 font-weight: 900;
-                color: #650300;
+                font-style: italic;
+                color: #aa0601;
                 @include pad() {
                     font-size: 28px;
                     line-height: 42px;
@@ -120,6 +121,48 @@
             @include pad() {
                 flex-direction: row;
                 margin: 8px 0;
+            }
+        }
+    }
+}
+
+// 聯名設計
+.list_style_design {
+    display: flex;
+    justify-content: space-between;
+    @include phoneV() {
+        flex-direction: column;
+    }
+    .list_body {
+        width: 50%;
+        height: 472px;
+        &:first-child {
+            margin-right: 30px;
+        }
+        @include pad() {
+            height: 280px;
+        }
+        @include phoneV() {
+            width: 100%;
+            &:first-child {
+                margin-bottom: 1rem;
+            }
+        }
+        .list_text {
+            background-color: #ffffff80;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+                font-size: 72px;
+                line-height: 108px;
+                font-weight: bold;
+                color: #aa0601;
+                @include pad() {
+                    font-size: 32px;
+                    line-height: 45px;
+                }
             }
         }
     }
