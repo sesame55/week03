@@ -626,6 +626,19 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .list_style_customer .list_body {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .list_style_customer .list_body:nth-of-type(1), .list_style_customer .list_body:nth-of-type(2) {
+    margin-bottom: 0px;
+  }
+  .list_style_customer .list_body:last-child {
+    margin-bottom: 0px;
+  }
+}
+
 .list_style_customer .list_body:last-child {
   margin-right: 0px;
 }
@@ -641,6 +654,12 @@ body {
   padding-top: 14px;
   padding-bottom: 15px;
   border: 1px solid #dee2e6;
+}
+
+@media (max-width: 375px) {
+  .list_style_customer .list_body .list_text {
+    padding: 16px;
+  }
 }
 
 .list_style_customer .list_body .list_text_title {
