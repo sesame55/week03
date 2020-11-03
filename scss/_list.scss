@@ -167,3 +167,55 @@
         }
     }
 }
+
+// 顧客
+.list_style_customer {
+    display: flex;
+    justify-content: space-between;
+    @include pad() {
+        flex-wrap: wrap;
+    }
+    .list_body {
+        margin-right: 30px;
+        @include pad() {
+            margin-right: 0px;
+            width: 47%;
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+                margin-bottom: 30px;
+            }
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+        .list_img {
+            height: 256px;
+        }
+        .list_text {
+            font-family: 'Roboto';
+            font-weight: normal;
+            padding: 0 16px;
+            padding-top: 14px;
+            padding-bottom: 15px;
+            border: 1px solid #dee2e6;
+            &_title {
+                color: #212529;
+                font-size: 14px;
+                line-height: 21px;
+                margin-bottom: 7px;
+            }
+            &_content {
+                color: #212529;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &_footer {
+                color: #707070;
+                font-size: 14px;
+                line-height: 21px;
+                display: block;
+                margin-top: 10px;
+            }
+        }
+    }
+}
