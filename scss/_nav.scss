@@ -6,11 +6,13 @@
 .nav {
     display: flex;
     // flex-wrap: wrap;
-    padding-left: 88px;
-    padding-right: 88px;
+    // padding-left: 88px;
+    // padding-right: 88px;
+    padding-left: 4%;
+    padding-right: 4%;
     @include pad() {
-        padding-left: 39px;
-        padding-right: 39px;
+        // padding-left: 39px;
+        // padding-right: 39px;
     }
     @include phoneV() {
         flex-direction: column;

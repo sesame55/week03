@@ -39,3 +39,18 @@
         margin-bottom: 20px;
     }
 }
+.section_title-sm {
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 24px;
+    @include pad() {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 16px;
+    }
+    @include phoneV() {
+        font-size: 20px;
+        line-height: 48px;
+        margin-bottom: 20px;
+    }
+}
