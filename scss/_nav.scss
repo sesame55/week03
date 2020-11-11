@@ -5,18 +5,9 @@
 // 最外圍
 .nav {
     display: flex;
-    // flex-wrap: wrap;
-    // padding-left: 88px;
-    // padding-right: 88px;
-    padding-left: 4%;
-    padding-right: 4%;
-    @include pad() {
-        // padding-left: 39px;
-        // padding-right: 39px;
-    }
-    @include phoneV() {
+    padding: 0 4%;
+    @include phoneH() {
         flex-direction: column;
-        // justify-content: center;
         align-items: center;
         padding: 0px;
     }
@@ -25,33 +16,65 @@
 // logo`
 .nav_logo {
     display: inline-block;
-    @include phoneV() {
+    @include phoneH() {
         height: 50px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    &:hover {
+        opacity: 0.5;
     }
 }
 
 // menu
 .nav_list {
     display: flex;
+    margin-left: auto;
     // flex-wrap: wrap;
-    @include phoneV() {
+    // @include pad() {
+    //     flex-wrap: wrap;
+    // }
+    @include phoneH() {
         flex-wrap: wrap;
+        margin: 0;
+        width: 100%;
+    }
+    .list_group {
+        // display: block;
+        // border: 1px solid yellow;
+        // margin-left:30%;
+        // margin-left: 64px;
+        @include pad() {
+            //    margin-left: 5%;
+            // margin-left: 40px;
+        }
+        @include phoneH() {
+            margin-left: 0px;
+            width: 50%;
+        }
     }
     .list_item {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        display: block;
+        color: #fff;
+        padding: 40px 32px;
         font-size: 20px;
         line-height: 30px;
         text-align: center;
-        margin-left: 64px;
+        // margin-left: 64px;
+        white-space: nowrap;
+        // width: 80px;
+        // transition: all 1s;
         @include pad() {
-            margin-left: 40px;
+            padding: 40px 20px;
         }
-        @include phoneV() {
+        @include phoneH() {
             padding: 8px;
-            margin: 0px;
-            width: 50%;
+            // margin: 0px;
+            // width: 100%;
             border: 1px solid #ffffff;
+        }
+        &:hover {
+            opacity: 0.5;
         }
     }
 }
