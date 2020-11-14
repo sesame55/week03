@@ -13,95 +13,95 @@
 //     }
 // }
 
-$space: 10px !default;
-$spacer: (
-    // 00這排都視為數字，前方的0只是為了排版，實際上只輸出後方數字
-    00: $space * 0,      //0
-    04: $space * 0.4,    //4
-    08: $space * 0.8,    //8
-    10: $space,          //10
-    16: $space * 1.6,    //16
-    20: $space * 2,      //20
-    24: $space * 2.4,    //24
-    30: $space * 3,      //30
-    32: $space * 3.2,    //32
-    36: $space * 3.6,    //36
-    40: $space * 4,      //40
-    48: $space * 4.8,    //48
-    56: $space * 5.6,    //56
-);
+// $space: 10px !default;
+// $spacer: (
+//     // 00這排都視為數字，前方的0只是為了排版，實際上只輸出後方數字
+//     00: $space * 0,      //0
+//     04: $space * 0.4,    //4
+//     08: $space * 0.8,    //8
+//     10: $space,          //10
+//     16: $space * 1.6,    //16
+//     20: $space * 2,      //20
+//     24: $space * 2.4,    //24
+//     30: $space * 3,      //30
+//     32: $space * 3.2,    //32
+//     36: $space * 3.6,    //36
+//     40: $space * 4,      //40
+//     48: $space * 4.8,    //48
+//     56: $space * 5.6,    //56
+// );
 
-@each $key, $value in $spacer {
-    // margin
-    .m-#{$key} {
-        margin: $value  !important;
-    }
-    .mt-#{$key} {
-        margin-top: $value !important;
-    }
-    .ml-#{$key} {
-        margin-left: $value !important;
-    }
-    .mb-#{$key} {
-        margin-bottom: $value !important;
-    }
-    .mr-#{$key} {
-        margin-right: $value !important;
-    }
-    // padding
-    .p-#{$key} {
-        padding: $value !important;
-    }
-    .pt-#{$key} {
-        padding-top: $value !important;
-    }
-    .pl-#{$key} {
-        padding-left: $value !important;
-    }
-    .pb-#{$key} {
-        padding-bottom: $value !important;
-    }
-    .pr-#{$key} {
-        padding-right: $value !important;
-    }
-}
+// @each $key, $value in $spacer {
+//     // margin
+//     .m-#{$key} {
+//         margin: $value  !important;
+//     }
+//     .mt-#{$key} {
+//         margin-top: $value !important;
+//     }
+//     .ml-#{$key} {
+//         margin-left: $value !important;
+//     }
+//     .mb-#{$key} {
+//         margin-bottom: $value !important;
+//     }
+//     .mr-#{$key} {
+//         margin-right: $value !important;
+//     }
+//     // padding
+//     .p-#{$key} {
+//         padding: $value !important;
+//     }
+//     .pt-#{$key} {
+//         padding-top: $value !important;
+//     }
+//     .pl-#{$key} {
+//         padding-left: $value !important;
+//     }
+//     .pb-#{$key} {
+//         padding-bottom: $value !important;
+//     }
+//     .pr-#{$key} {
+//         padding-right: $value !important;
+//     }
+// }
 
-@include pad() {
-    @each $key, $value in $spacer {
-        // margin
-        .m-mb-#{$key/2} {
-            margin: $value/2 !important;
-        }
-        .mt-mb-#{$key/2} {
-            margin-top: $value/2 !important;
-        }
-        .ml-mb-#{$key/2} {
-            margin-left: $value/2 !important;
-        }
-        .mb-mb-#{$key/2} {
-            margin-bottom: $value/2 !important;
-        }
-        .mr-mb-#{$key/2} {
-            margin-right: $value/2 !important;
-        }
-        // padding
-        .p-mb-#{$key/2} {
-            padding: $value/2 !important;
-        }
-        .pt-mb-#{$key/2} {
-            padding-top: $value/2 !important;
-        }
-        .pl-mb-#{$key/2} {
-            padding-left: $value/2 !important;
-        }
-        .pb-mb-#{$key/2} {
-            padding-bottom: $value/2 !important;
-        }
-        .pr-mb-#{$key/2} {
-            padding-right: $value/2 !important;
-        }
-    }
-}
+// @include pad() {
+//     @each $key, $value in $spacer {
+//         // margin
+//         .m-mb-#{$key/2} {
+//             margin: $value/2 !important;
+//         }
+//         .mt-mb-#{$key/2} {
+//             margin-top: $value/2 !important;
+//         }
+//         .ml-mb-#{$key/2} {
+//             margin-left: $value/2 !important;
+//         }
+//         .mb-mb-#{$key/2} {
+//             margin-bottom: $value/2 !important;
+//         }
+//         .mr-mb-#{$key/2} {
+//             margin-right: $value/2 !important;
+//         }
+//         // padding
+//         .p-mb-#{$key/2} {
+//             padding: $value/2 !important;
+//         }
+//         .pt-mb-#{$key/2} {
+//             padding-top: $value/2 !important;
+//         }
+//         .pl-mb-#{$key/2} {
+//             padding-left: $value/2 !important;
+//         }
+//         .pb-mb-#{$key/2} {
+//             padding-bottom: $value/2 !important;
+//         }
+//         .pr-mb-#{$key/2} {
+//             padding-right: $value/2 !important;
+//         }
+//     }
+// }
 
 
 

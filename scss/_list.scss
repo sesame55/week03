@@ -132,7 +132,7 @@
 .list_style_design {
     display: flex;
     justify-content: space-between;
-    @include phoneV() {
+    @include phoneH() {
         flex-direction: column;
     }
     .list_body {
@@ -144,7 +144,7 @@
         @include pad() {
             height: 280px;
         }
-        @include phoneV() {
+        @include phoneH() {
             width: 100%;
             &:first-child {
                 margin-bottom: 1rem;
@@ -187,7 +187,7 @@
                 margin-bottom: 30px;
             }
         }
-        @include phoneV() {
+        @include phoneH() {
             width: 100%;
             margin-bottom: 16px;
             &:nth-of-type(1),
@@ -211,7 +211,7 @@
             padding-top: 14px;
             padding-bottom: 15px;
             border: 1px solid #dee2e6;
-            @include phoneV() {
+            @include phoneH() {
                 padding: 16px;
             }
             &_title {

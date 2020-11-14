@@ -1,13 +1,14 @@
 .footer {
     padding: 40px 0;
-    @include phoneV() {
+    @include phoneH() {
         padding: 24px 0;
     }
 }
+
 .footer_menu {
     display: flex;
     justify-content: space-between;
-    @include phoneV() {
+    @include phoneH() {
         display: none;
     }
     &-left {
@@ -38,7 +39,7 @@
     }
     &-sm {
         display: none;
-        @include phoneV() {
+        @include phoneH() {
             display: flex;
             position: absolute;
             top: 0;
@@ -57,18 +58,19 @@
     @include pad() {
         margin-top: 24px;
     }
-    @include phoneV() {
+    @include phoneH() {
         position: relative;
     }
     .menu-item {
         display: flex;
+        margin-bottom: 16px;
     }
     .menu-item img {
         height: 48px;
         @include pad() {
             height: 24px;
         }
-        @include phoneV() {
+        @include phoneH() {
             height: 20px;
         }
     }
@@ -82,7 +84,7 @@
             font-size: 20px;
             line-height: 30px;
         }
-        @include phoneV() {
+        @include phoneH() {
             font-size: 16px;
             margin-left: 4px;
         }
@@ -93,7 +95,7 @@
     margin-top: 24px;
     display: flex;
     align-items: center;
-    @include phoneV() {
+    @include phoneH() {
         flex-direction: column;
         align-items: flex-start;
         position: relative;
@@ -106,7 +108,7 @@
             @include pad() {
                 display: none;
             }
-            @include phoneV() {
+            @include phoneH() {
                 display: block;
                 position: absolute;
                 right: 0;
@@ -118,7 +120,7 @@
         p {
             font-size: 16px;
             line-height: 24px;
-            @include phoneV() {
+            @include phoneH() {
                 font-size: 14px;
             }
         }
@@ -127,7 +129,7 @@
         margin-left: auto;
         font-size: 14px;
         line-height: 21px;
-        @include phoneV() {
+        @include phoneH() {
             display: flex;
             flex-direction: column;
             margin-left: 0px;
@@ -137,7 +139,7 @@
             @include pad() {
                 margin-left: 24px;
             }
-            @include phoneV() {
+            @include phoneH() {
                 margin-left: 0px;
                 margin-top: 8px;
             }
